@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+  --primary-font: "Ubuntu", Arial, sans-serif;
+  --header-primary-color: #2c3e50;
+  --header-border-color: #f1c40f;
+  --white-color: #ffffff;
+
+  --nav-background-color:#34495e;
+  
+  --main-background-color:#ecf0f1;
+
+  --section-background-color: #f9f9f9;
+  --section-border-color: #16a085;
+  
+  --aside-background-color: #fdf9e7;
+  --aside-border-color: #e67e22;
+  
+  --footer-background-color: #2c3e50;
+  
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--primary-font);
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}

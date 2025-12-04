@@ -1,0 +1,8 @@
+header {
+  background-color: var(--header-primary-color);
+  color: var(--white-color);
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+  border-bottom: 5px solid var(--header-border-color);
+}

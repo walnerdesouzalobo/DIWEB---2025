@@ -1,0 +1,14 @@
+article {
+  background-color: var(--white-color); 
+  min-height: 400px;
+  padding: 25px;
+  flex-grow: 3;
+}
+section {
+  background-color: var(--section-background-color);
+  min-height: 100px;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px dashed var(--section-border-color);
+  border-radius: 5px;
+}

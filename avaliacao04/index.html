@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forno Mágico | Pizzaria Artesanal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-xl sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center relative">
+            <h1 class="text-3xl font-black text-primary">Forno Mágico</h1>
+            
+            <input type="checkbox" id="menu-toggle-checkbox" />
+            
+            <label for="menu-toggle-checkbox" class="menu-toggle-label md:hidden text-primary focus:outline-none p-2 rounded-lg hover:bg-gray-100 transition cursor-pointer">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </label>
+
+            <nav id="main-nav" class="nav-menu md:flex space-x-8 mt-2 md:mt-0 w-full md:w-auto items-center">
+                <a href="#hero" class="text-gray-700 hover:text-primary hover:underline font-semibold transition">Início</a>
+                <a href="#produtos" class="text-gray-700 hover:text-primary hover:underline font-semibold transition">Cardápio</a>
+                <a href="#sobre" class="text-gray-700 hover:text-primary hover:underline font-semibold transition">Nossa História</a>
+                <a href="#contato" class="color-accent text-gray-900 px-5 py-2 rounded-full font-bold hover:opacity-90 transition shadow-md">Pedir Online!</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="color-primary text-white py-20 md:py-32 bg-cover bg-center rounded-b-[40px] shadow-2xl"
+        style="background-image: url('https://placehold.co/1600x800/990000/FFC300?text=A+Melhor+Pizza+Artesanal');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-black bg-opacity-30 p-8 rounded-xl backdrop-blur-sm">
+            <h2 class="hero-title font-extrabold mb-4 leading-tight">
+                A Tradição Italiana, Feita com Magia.
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Fermentação lenta, ingredientes frescos e assada no forno a lenha. Sinta o sabor original.
+            </p>
+            <a href="#produtos" class="inline-block color-accent text-gray-900 text-xl font-bold px-10 py-4 rounded-full shadow-2xl hover:opacity-90 transform hover:scale-105 transition duration-300 ease-in-out">
+                Ver o Cardápio Completo
+            </a>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-extrabold text-center mb-4 text-primary">Nossas Pizzas Destaque</h3>
+            <p class="text-center text-lg text-gray-600 mb-12">Todas assadas em forno a lenha, com massa de fermentação natural.</p>
+
+            <div class="product-grid grid gap-8">
+
+                <article class="bg-white p-6 rounded-2xl shadow-xl card-hover flex flex-col items-center text-center border-t-8 border-yellow-500">
+                    <img src="img/pizza01.jpg"
+                     alt="Pizza Margherita" class="w-full h-48 object-cover mb-4 rounded-xl"
+                        onerror="this.onerror=null; this.src='https://placehold.co/300x200/990000/ffffff?text=Pizza';">
+                    <h4 class="text-2xl font-black mb-2 text-primary">Margherita Clássica</h4>
+                    <p class="text-gray-600 mb-4 flex-grow">Molho de tomate pelado, mussarela de búfala, manjericão fresco e azeite.</p>
+                    <span class="text-3xl font-bold text-accent mb-4">R$ 49,90</span>
+                    <a href="#contato" class="w-full color-primary text-white font-semibold py-3 rounded-full hover:opacity-90 transition">
+                        Fazer Pedido
+                    </a>
+                </article>
+
+                <article class="bg-white p-6 rounded-2xl shadow-xl card-hover flex flex-col items-center text-center border-t-8 border-yellow-500">
+                    <img src="img/pizza02.jpg" 
+                    alt="Pizza Quatro Queijos" class="w-full h-48 object-cover mb-4 rounded-xl"
+                        onerror="this.onerror=null; this.src='https://placehold.co/300x200/FFC300/990000?text=Queijos';">
+                    <h4 class="text-2xl font-black mb-2 text-primary">Quatro Formaggi</h4>
+                    <p class="text-gray-600 mb-4 flex-grow">Combinação dos melhores queijos: mussarela, provolone, gorgonzola e parmesão.</p>
+                    <span class="text-3xl font-bold text-accent mb-4">R$ 54,50</span>
+                    <a href="#contato" class="w-full color-primary text-white font-semibold py-3 rounded-full hover:opacity-90 transition">
+                        Fazer Pedido
+                    </a>
+                </article>
+
+                <article class="bg-white p-6 rounded-2xl shadow-xl card-hover flex flex-col items-center text-center border-t-8 border-yellow-500">
+                    <img src="img/pizza03.jpg" 
+                    alt="Pizza Vegana" class="w-full h-48 object-cover mb-4 rounded-xl"
+                        onerror="this.onerror=null; this.src='https://placehold.co/300x200/558b2f/ffffff?text=Vegana';">
+                    <h4 class="text-2xl font-black mb-2 text-primary">Horta no Forno</h4>
+                    <p class="text-gray-600 mb-4 flex-grow">Base de abobrinha, pimentões coloridos, cebola caramelizada e azeite trufado (Vegan).</p>
+                    <span class="text-3xl font-bold text-accent mb-4">R$ 52,00</span>
+                    <a href="#contato" class="w-full color-primary text-white font-semibold py-3 rounded-full hover:opacity-90 transition">
+                        Fazer Pedido
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="color-secondary text-gray-800 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-extrabold text-center mb-12 text-primary">O Segredo da Nossa Massa</h3>
+            
+            <div class="about-container">
+                <figure class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/990000/FFC300?text=Forno+a+Lenha" alt="Imagem de forno a lenha" class="w-full rounded-2xl shadow-2xl">
+                </figure>
+                <div class="w-full md:w-1/2">
+                    <p class="text-xl leading-relaxed mb-6">
+                        Nascemos da paixão pela autêntica pizza napolitana. Acreditamos que a lentidão é o ingrediente secreto. Por isso, nossa massa passa por um processo de fermentação de 48 horas.
+                    </p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3 text-primary font-extrabold">🍕</span> 48h de Fermentação Natural.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3 text-primary font-extrabold">🔥</span> Assada em Forno a Lenha.
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3 text-primary font-extrabold">🍅</span> Ingredientes Locais e Frescos.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 md:py-24">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 bg-white p-8 rounded-3xl shadow-2xl border-t-8 color-accent">
+            <h3 class="text-3xl font-bold text-center mb-4 text-primary">Peça sua Pizza Agora!</h3>
+            <p class="text-center text-gray-600 mb-8">Receba em casa ou agende a retirada. Rapidez e sabor garantidos.</p>
+
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="endereco" class="block text-sm font-medium text-gray-700">Endereço de Entrega:</label>
+                    <input type="text" id="endereco" name="endereco" required
+                            class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                    <label for="telefone" class="block text-sm font-medium text-gray-700">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required
+                            class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:ring-primary focus:border-primary">
+                </div>
+                <button type="submit" class="w-full color-primary text-white font-bold py-4 rounded-xl hover:opacity-90 transform hover:scale-[1.02] transition duration-200 ease-in-out shadow-lg">
+                    Finalizar Meu Pedido
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="color-primary text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
+            <p class="text-sm">&copy; 2025 Forno Mágico Pizzaria. Todos os direitos reservados. | Desenvolvido com Foco em Responsividade.</p>
+            <div class="flex justify-center space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-gray-300 transition">Instagram</a>
+                <a href="#" class="hover:text-gray-300 transition">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

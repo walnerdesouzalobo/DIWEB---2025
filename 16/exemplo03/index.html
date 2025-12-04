@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>exemplo03</title>
+</head>
+<body>
+    <h1>trabalhando com input e outros tipos</H1>
+    <form method="post">
+     <label for="nome">nome</label> 
+     <br>
+     <input type="text"name="nome"id="nome" size="50" placeholder="informe seu nome." riquired autofocus> 
+     <br>
+     <label for="email">E-mail</label> 
+     <br>
+     <input type="email"name="email"id="email" size="50" placeholder="informe seu E-mail." riquired> 
+     <br>
+     <label for="tipo">tipo</label>
+     <select name="tipo" id="tipo">
+     <option value="elogio">elogio</option>
+     <option value="sugestao">sugestão</option>
+     <option value="reclamacao">reclamação</option>
+    </select>
+    <label for="descricao">descrição</label>
+    <textarea name="descricao" id="descricao" cols="50" rows="5"></textarea>
+     <hr>
+     <label for="anexo">Anexo</label>
+     <input type="file" name="anexo" id="anexo" accept="pdf" >
+     <hr>
+     <input type="submit" value="enviar">
+     <input type="reset" value="limpar">
+    </form>
+ 
+</body>
+</html>
